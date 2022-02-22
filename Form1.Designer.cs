@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgwContent = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -39,29 +39,29 @@
             this.totalCredito = new System.Windows.Forms.TextBox();
             this.buttonAdd = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.textCuenta = new System.Windows.Forms.TextBox();
+            this.txtCuenta = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtNombreCuenta = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.txtMonto = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgwContent)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dgwContent
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgwContent.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgwContent.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2,
             this.Column3,
             this.Column4});
-            this.dataGridView1.Location = new System.Drawing.Point(79, 90);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(643, 150);
-            this.dataGridView1.TabIndex = 0;
+            this.dgwContent.Location = new System.Drawing.Point(79, 90);
+            this.dgwContent.Name = "dgwContent";
+            this.dgwContent.RowTemplate.Height = 25;
+            this.dgwContent.Size = new System.Drawing.Size(643, 150);
+            this.dgwContent.TabIndex = 0;
             // 
             // Column1
             // 
@@ -138,12 +138,12 @@
             this.label3.Text = "Cuenta";
             this.label3.Click += new System.EventHandler(this.totalDebito_Click);
             // 
-            // textCuenta
+            // txtCuenta
             // 
-            this.textCuenta.Location = new System.Drawing.Point(79, 62);
-            this.textCuenta.Name = "textCuenta";
-            this.textCuenta.Size = new System.Drawing.Size(100, 23);
-            this.textCuenta.TabIndex = 2;
+            this.txtCuenta.Location = new System.Drawing.Point(79, 62);
+            this.txtCuenta.Name = "txtCuenta";
+            this.txtCuenta.Size = new System.Drawing.Size(100, 23);
+            this.txtCuenta.TabIndex = 2;
             // 
             // label4
             // 
@@ -214,14 +214,14 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textCuenta);
+            this.Controls.Add(this.txtCuenta);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.totalDebito);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgwContent);
             this.Name = "Form1";
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgwContent)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -229,7 +229,7 @@
 
         #endregion
 
-        private DataGridView dataGridView1;
+        private DataGridView dgwContent;
         private DataGridViewTextBoxColumn Column1;
         private DataGridViewTextBoxColumn Column2;
         private DataGridViewTextBoxColumn Column3;
@@ -240,7 +240,7 @@
         private TextBox totalCredito;
         private Button buttonAdd;
         private Label label3;
-        private TextBox textCuenta;
+        private TextBox txtCuenta;
         private Label label4;
         private TextBox txtNombreCuenta;
         private Label label5;
